@@ -79,6 +79,6 @@ Pinteresting::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Required for Heorku
-  # Note to set this to your actual host
+  # Note to set this to your actual host name
      config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
