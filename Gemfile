@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby '2.0.0'
 
 gem 'rails', '4.0.0'
@@ -11,6 +11,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass' , github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 gem "devise", '~> 3.1.1'
+gem 'paperclip', '~> 3.0'
 
 group :development, :test	do
 	gem 'sqlite3'
