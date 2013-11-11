@@ -4,14 +4,14 @@ class PinsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @pins = Pin.all
+   @pins = Pin.all.order("created_at DESC").paginate(:page => params[:page])
   end
 
   def show
   end
 
   def new
-    @pin = current_user.pins.build
+   @pin = current_user.pins.build
   end
 
   def edit
